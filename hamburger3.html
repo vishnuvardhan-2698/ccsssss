@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checked</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        .data > p {
+    background-color: bisque;
+    font-size: 30px;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+#container:checked + .data {
+    transform: translateX(300px) 
+        
+}
+
+#container {
+    display: none;
+}
+
+.data {
+    position: relative;
+    left: -300px; 
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+
+}
+
+    </style>
+</head>
+<body>
+
+    <label for="container"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOS9EEOhmjbrqupspcZiT1URXVGR7EGcs6AQ&s" alt="" width="40px"></label>
+    <input type="checkbox" id="container">
+
+    <div class="data">
+        <p>Break Fast</p>
+        <p>Lunch</p>
+        <p>Snacks</p>
+        <p>Dinner</p>
+    </div>
+</body>
+</html>
